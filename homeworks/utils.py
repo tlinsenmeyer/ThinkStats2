@@ -48,7 +48,7 @@ def read_stata_dict(dct_file, **options):
 
     returns: FixedWidthVariables object
     """
-    type_map = dict(byte=int, int=int, long=int, float=float,
+    type_map = dict(byte=np.int32, int=np.int64, long=np.int64, float=float,
                     double=float, numeric=float)
 
     var_info = []
